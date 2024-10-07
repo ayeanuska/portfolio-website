@@ -1,0 +1,30 @@
+/* --- nav bar --- */
+:root {
+  --primary: #baebe1;
+  --secondary: #ffe6a7;
+  --tertiary: #79b667;
+}
+.navbar {
+  background: var(--primary);
+  display: flex;
+}
+
+.top {
+  justify-content: right;
+  align-items: center;
+}
+
+.pages {
+  background: #00000045;
+  align-items: center;
+  font-size: 3vh;
+}
+
+.pages ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.pages ul li {
+  margin: 1rem;
+}
