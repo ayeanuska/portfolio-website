@@ -29,7 +29,7 @@ body {
 .container {
   width: 80%;
   margin: auto;
-  max-width: 1400px;
+  max-width: 1600px;
 }
 .flex {
   display: flex;
@@ -197,6 +197,15 @@ applying dark mode feature
   background: var(--buttoncolor);
   height: 6vh;
   width: 0.3vw;
+}
+
+.info-content div span {
+  font-weight: bolder;
+  font-size: 1.3rem;
+  letter-spacing: 5px;
+}
+.info-content div p {
+  color: orangered;
 }
 
 /* <!-- --projects-- --> */
