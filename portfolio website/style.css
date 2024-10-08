@@ -1,7 +1,7 @@
 :root {
   --primary: #cce3de;
   --secondary: #eaf4f4;
-  --buutoncolor: #cf9b16;
+  --buttoncolor: #cca43e;
 
   --darkbg: #000;
   --dark-text-color: white;
@@ -56,7 +56,7 @@ a {
 }
 
 .wrapper {
-  background: rgba(225, 244, 208, 0.834);
+  background: var(--secondary);
   min-height: 100vh;
 }
 
@@ -79,7 +79,7 @@ header .header {
 }
 .line::before {
   content: "";
-  background: var(--buutoncolor);
+  background: var(--buttoncolor);
   width: 4px;
   height: 100%;
 
@@ -89,20 +89,21 @@ header .header {
 .navigation {
   list-style: none;
   font-weight: bold;
+  margin-left: 50vw;
 }
 
 .navigation li:hover {
-  color: var(--buutoncolor);
+  color: var(--buttoncolor);
   transition: all 0.3s;
 
-  color: var(--buutoncolor);
+  color: var(--buttoncolor);
 }
 /* 
 applying dark mode feature
  */
 
 #mode:checked + .wrapper {
-  zoom: 2;
+  zoom: 1;
   background: var(--darkbg);
   color: var(--dark-text-color);
 }
@@ -112,6 +113,55 @@ applying dark mode feature
 }
 
 /* <!-- --hero section-- --> */
+.hero-section {
+  margin-top: 5rem;
+  height: 60vh;
+}
+
+.hero {
+  background: #9cad8936;
+  grid-template-areas: "left right";
+  padding: 2rem;
+}
+.left {
+  grid-area: left;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10vw;
+}
+.left div span {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.left .tag {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.left button {
+  background-color: var(--buttoncolor);
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 2%;
+  cursor: pointer;
+}
+
+.right {
+  grid-area: right;
+  justify-content: end;
+  align-items: center;
+}
+
+.right img {
+  height: 40vh;
+}
+
+.left button {
+  background: var(--buttoncolor);
+}
+
 /* <!--  banner-- --> */
 /* <!-- --projects-- --> */
 /* <!-- --about me-- --> */
