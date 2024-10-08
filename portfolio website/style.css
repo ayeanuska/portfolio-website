@@ -1,7 +1,10 @@
 :root {
   --primary: #cce3de;
   --secondary: #eaf4f4;
-  --buutoncolor: #ffe6a7;
+  --buutoncolor: #cf9b16;
+
+  --darkbg: #000;
+  --dark-text-color: white;
 }
 
 html {
@@ -34,21 +37,36 @@ body {
   display: grid;
   gap: 1rem;
 }
+
 a {
   text-decoration: none;
   color: inherit;
 }
+/* <!-- --darkmode toggler-- --> */
+[for="mode"] {
+  position: fixed;
+  top: 6rem;
+  left: 3rem;
+}
+
+[for="mode"]:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
 
 .wrapper {
-  background: rgba(193, 233, 158, 0.834);
+  background: rgba(225, 244, 208, 0.834);
   min-height: 100vh;
 }
-/* <!-- --darkmode toggler-- --> */
+
 /* <!-- --nav bar-- --> */
-header.header {
+header .header {
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  background-color: var(--primary);
+  width: 100%;
 }
 .logo {
   font-size: 1.2rem;
@@ -66,7 +84,7 @@ header.header {
   height: 100%;
 
   position: absolute;
-  left: 35%;
+  left: 40%;
 }
 .navigation {
   list-style: none;
@@ -76,6 +94,21 @@ header.header {
 .navigation li:hover {
   color: var(--buutoncolor);
   transition: all 0.3s;
+
+  color: var(--buutoncolor);
+}
+/* 
+applying dark mode feature
+ */
+
+#mode:checked + .wrapper {
+  zoom: 2;
+  background: var(--darkbg);
+  color: var(--dark-text-color);
+}
+
+#mode {
+  display: none;
 }
 
 /* <!-- --hero section-- --> */

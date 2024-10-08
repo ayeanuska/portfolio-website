@@ -4,17 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anuska's portfolio website</title>
+    <!-- --fontawsome cdn--- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- --googlr fonts-- -->
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- --darkmode toggler-- -->
+
+    <input type="checkbox" id="mode" />
+
     <div class="wrapper">
-      <!-- --darkmode toggler-- -->
+      <label for="mode"> <i class="fa-solid fa-circle-half-stroke"></i></label>
       <!-- --nav bar-- -->
       <header>
         <div class="header container flex">
           <div class="logo flex">
             <div>Anuska</div>
-            <div class="line">Web Developer</div>
+            <div class="line">Full stack dev.</div>
           </div>
           <div class="menu">
             <ul class="flex navigation">
@@ -28,6 +43,21 @@
         </div>
       </header>
       <!-- --hero section-- -->
+      <section class="hero-section container">
+        <div class="grid hero">
+          <div class="left flex">
+            <div>
+              Hi I'm
+              <span>Anuska Shrestha</span>
+            </div>
+            <div class="tag">Full stack developer</div>
+            <p></p>
+          </div>
+          <div class="right flex">
+            <img src="assets/IMG_7988 Small.jpeg" alt="anuska's img" />
+          </div>
+        </div>
+      </section>
       <!--  banner-- -->
       <!-- --projects-- -->
       <!-- --about me-- -->
