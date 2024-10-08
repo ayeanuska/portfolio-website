@@ -50,6 +50,16 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.tittle {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.tittle span {
+  border-bottom: 3px solid var(--buttoncolor);
+}
+
 /* <!-- --darkmode toggler-- --> */
 [for="mode"] {
   position: fixed;
@@ -208,8 +218,35 @@ applying dark mode feature
   color: orangered;
 }
 
+/* -- skilss-- */
+
+.skills {
+  margin-top: 5rem;
+}
+.skills-container {
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+}
+
+.skills-container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-container > div i {
+  font-size: 3rem;
+}
+
 /* <!-- --projects-- --> */
 /* <!-- --about me-- --> */
 
 /* <!-- contact-- --> */
 /* <!-- footer section */
+footer {
+  min-height: 30vh;
+  background: #000;
+  color: white;
+  margin-top: 5rem;
+}
