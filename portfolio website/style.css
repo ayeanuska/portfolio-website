@@ -1,30 +1,87 @@
-/* --- nav bar --- */
 :root {
-  --primary: #baebe1;
-  --secondary: #ffe6a7;
-  --tertiary: #79b667;
-}
-.navbar {
-  background: var(--primary);
-  display: flex;
+  --primary: #cce3de;
+  --secondary: #eaf4f4;
+  --buutoncolor: #ffe6a7;
 }
 
-.top {
-  justify-content: right;
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-.pages {
-  background: #00000045;
+.wrapper {
+  background: rgba(193, 233, 158, 0.834);
+  min-height: 100vh;
+}
+/* <!-- --darkmode toggler-- --> */
+/* <!-- --nav bar-- --> */
+header.header {
+  justify-content: center;
   align-items: center;
-  font-size: 3vh;
+  padding: 1rem;
+}
+.logo {
+  font-size: 1.2rem;
+  position: relative;
 }
 
-.pages ul {
-  display: flex;
-  list-style-type: none;
+.logo :first-child {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+.line::before {
+  content: "";
+  background: var(--buutoncolor);
+  width: 4px;
+  height: 100%;
+
+  position: absolute;
+  left: 35%;
+}
+.navigation {
+  list-style: none;
+  font-weight: bold;
 }
 
-.pages ul li {
-  margin: 1rem;
+.navigation li:hover {
+  color: var(--buutoncolor);
+  transition: all 0.3s;
 }
+
+/* <!-- --hero section-- --> */
+/* <!--  banner-- --> */
+/* <!-- --projects-- --> */
+/* <!-- --about me-- --> */
+
+/* <!-- contact-- --> */
+/* <!-- footer section */
