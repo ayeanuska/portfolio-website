@@ -300,6 +300,40 @@ applying dark mode feature
 }
 
 /* <!-- contact-- --> */
+
+.contact {
+  margin-top: 5rem;
+  padding: 7rem 0rem;
+  width: 400px;
+}
+.contact .social {
+  font-size: 4rem;
+  justify-content: space-between;
+}
+
+.contact h3 {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.contact .email-section {
+  background: #000;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 40px;
+}
+
+.contact .email-section span {
+  font-size: 1rem;
+}
+
+.contact .email-icon {
+  background: var(--buttoncolor);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin: 0rem 1rem;
+}
 /* <!-- footer section */
 footer {
   min-height: 30vh;
