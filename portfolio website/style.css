@@ -262,6 +262,42 @@ applying dark mode feature
   gap: 2rem;
 }
 /* <!-- --about me-- --> */
+.about {
+  margin-top: 5rem;
+}
+
+.about-content {
+  background: #9cad8936;
+}
+
+.about-content .myimg {
+  width: 40%;
+}
+.about-content .mybio h2 {
+  letter-spacing: 5px;
+
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.about-content .mybio p:nth-child(4),
+.mybio .tag {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.mybio .tag + div > span {
+  border-radius: 5px;
+  background: var(--buttoncolor);
+  padding: 0.8rem 1.2rem;
+  margin: 1rem;
+}
+.mybio .tag + div > span:hover {
+  background: #9cad8936;
+  cursor: pointer;
+  transform: scale(1.3);
+  transition: all 0.5s;
+}
 
 /* <!-- contact-- --> */
 /* <!-- footer section */
