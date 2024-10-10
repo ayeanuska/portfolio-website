@@ -243,7 +243,8 @@ applying dark mode feature
   margin-top: 5rem;
 }
 
-.project-container {
+.projects .project-container {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .project .project-card {
