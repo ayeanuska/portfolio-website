@@ -302,7 +302,7 @@ applying dark mode feature
 /* <!-- contact-- --> */
 
 .contact {
-  margin-top: 5rem;
+  margin-top: 2rem;
   padding: 7rem 0rem;
   width: 400px;
 }
@@ -333,6 +333,8 @@ applying dark mode feature
   height: 3rem;
   border-radius: 50%;
   margin: 0rem 1rem;
+
+  box-shadow: var(--shadow);
 }
 /* <!-- footer section */
 footer {
@@ -340,4 +342,20 @@ footer {
   background: #000;
   color: white;
   margin-top: 5rem;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+footer .top {
+  margin-bottom: 4rem;
+  gap: 3rem;
+}
+
+footer .top ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+footer .top ul li {
+  line-height: 1.5rem;
 }
