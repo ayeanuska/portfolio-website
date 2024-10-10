@@ -131,7 +131,6 @@ applying dark mode feature
 #mode {
   display: none;
 }
-
 /* <!-- --hero section-- --> */
 .hero-section {
   margin-top: 5rem;
@@ -240,6 +239,25 @@ applying dark mode feature
 }
 
 /* <!-- --projects-- --> */
+.projects {
+  margin-top: 5rem;
+}
+
+.project-container {
+}
+
+.project .project-card {
+  box-shadow: var(--shadow);
+  border-radius: 5px;
+  padding: 3rem;
+}
+
+.project .project-card .links {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
 /* <!-- --about me-- --> */
 
 /* <!-- contact-- --> */
