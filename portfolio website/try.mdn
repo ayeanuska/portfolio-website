@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- -- darkmode toggler -- -->
+
+      <div class="darkmode"></div>
+      <!-- --navbar-- -->
+      <div class="navbar">
+        <div class="log">
+          <div>Anuska</div>
+          <div>Web Developer</div> </div>
+        <div class="pages">
+          <ul>
+            <li>Home</li>
+            <li>Projects</li>
+            <li>About</li>
+            <li>Contacts</li>
+          </ul>
+        </div>
+      </div>
+      <!-- --hero section-- -->
+      <div class="hero-section">
+        <div class="heroimg"></div>
+        <div class="intro">
+          Hi I'am
+          <h1>Anuska shrestha</h1>
+        </div>
+        <div class="body">
+          <p>
+            Passionate web developer with a creative mindset, currently learning
+            to become a skilled full-stack developer. Always exploring new
+            technologies and building connections
+          </p>
+          <p>
+            I am actively engaged in freelance collaborations where I combine my
+            passions for art direction and digital content creation. Through
+            these projects, I've honed my creative vision, bringing concepts to
+            life through thoughtful storytelling and innovative design.
+          </p>
+        </div>
+        <div class="button"></div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+ <!-- --darkmode toggler-- -->
+      <!-- --nav bar-- -->
+      <!-- --hero section-- -->
+      <!--  banner-- -->
+      <!-- --projects-- -->
+      <!-- --about me-- -->
+
+      <!-- contact-- -->
+      <!-- footer section

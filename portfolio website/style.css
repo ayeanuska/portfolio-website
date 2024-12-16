@@ -359,3 +359,270 @@ footer .top ul {
 footer .top ul li {
   line-height: 1.5rem;
 }
+
+/* --- General Responsive Updates --- */
+
+/* Mobile/Tablet View (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  /* Body and main wrapper adjustments */
+  .wrapper {
+    padding: 1rem;
+    background: var(--secondary);
+  }
+
+  /* Navigation menu for smaller screens */
+  .navigation {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: var(--primary);
+    width: 200px;
+    padding: 1rem;
+    display: none; /* Initially hidden */
+  }
+
+  /* Show menu when toggled */
+  #mode:checked + .wrapper .navigation {
+    display: flex;
+  }
+
+  /* Toggle button styles for mobile */
+  [for="mode"] {
+    top: 10px;
+    left: 10px;
+  }
+
+  /* Adjust logo area for smaller screens */
+  .logo {
+    font-size: 1.1rem;
+    justify-content: center;
+  }
+
+  .header .menu {
+    display: none;
+  }
+
+  /* Hero Section Adjustments */
+  .hero-section {
+    height: auto;
+    margin-top: 3rem;
+  }
+
+  .hero {
+    grid-template-areas: "left" "right";
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+
+  .left {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .left .tag {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  .left button {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+  .right img {
+    width: 80%;
+    margin: auto;
+  }
+
+  /* Banner section for mobile */
+  .banner {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .info-divider {
+    width: 100%;
+    height: 0.2vh;
+  }
+
+  .info-content {
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Skills Section Adjustments */
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-container > div {
+    margin: 1rem;
+  }
+
+  .skills-container > div i {
+    font-size: 2rem;
+  }
+
+  /* Projects section */
+  .projects .project-container {
+    grid-template-columns: 1fr;
+  }
+
+  .projects .project-card {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .projects .project-card .links {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  /* About me section */
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content .myimg {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .about-content .mybio {
+    margin-top: 2rem;
+  }
+
+  .mybio .tag + div {
+    margin-top: 1rem;
+  }
+
+  /* Contact Section */
+  .contact {
+    padding: 3rem 1rem;
+    width: 100%;
+  }
+
+  .contact .social {
+    font-size: 3rem;
+    justify-content: space-evenly;
+  }
+
+  .contact h3 {
+    font-size: 1.5rem;
+  }
+
+  .email-section {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  /* Footer adjustments */
+  footer .top {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  footer .footer-links,
+  footer .socials {
+    margin: 1rem;
+  }
+
+  footer .bottom {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+  }
+}
+
+/* --- Tablet View (max-width: 1024px) --- */
+@media screen and (max-width: 1024px) {
+  /* Hero section adjustments for tablet */
+  .hero-section {
+    height: 70vh;
+  }
+
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left right";
+  }
+
+  .right img {
+    width: 90%;
+    margin: auto;
+  }
+
+  .left button {
+    width: 70%;
+  }
+
+  .skills-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .skills-container > div {
+    margin: 1rem;
+  }
+
+  .skills-container > div i {
+    font-size: 2.5rem;
+  }
+
+  .projects .project-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects .project-card {
+    margin: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  /* About me section adjustments */
+  .about-content {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .about-content .myimg {
+    width: 40%;
+  }
+
+  .about-content .mybio {
+    width: 55%;
+  }
+
+  /* Contact section adjustments */
+  .contact {
+    width: 50%;
+  }
+}
+
+/* --- Large Desktop View (min-width: 1600px) --- */
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 75%;
+  }
+
+  .hero-section {
+    margin-top: 8rem;
+  }
+
+  .banner {
+    gap: 5rem;
+  }
+
+  .projects .project-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
